@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head> 
+	<title>Index</title>
+	<style>
+		body
+		{
+			background-color: silver;
+			color: navy;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Programming Languages</h2>
+	<ul>
+		{% for language in programming_languages_output %}
+			<li>{{language}}</li> 
+		{% endfor %}
+	</ul>
+</body>
+
+</html>

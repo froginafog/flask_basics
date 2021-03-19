@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head> 
+	<title>Index</title>
+	<style>
+		body
+		{
+			background-color: Tan;
+			color: navy;
+		}
+		table
+		{
+			border: 1px solid green;
+			border-collapse: collapse;
+			width: 20%;
+			text-align: center;
+			padding: 5px;
+		}
+		th
+		{
+			border: 1px solid green;
+			width: 20%;
+			text-align: center;
+			padding: 5px;
+		}
+		td
+		{
+			border: 1px solid green;
+			border-collapse: collapse;
+			width: 20%;
+			text-align: center;
+			padding: 5px;
+		}
+		tr:hover {background-color: lightgreen;}
+		tr:hover {color: darkred;}
+		
+	</style>
+</head>
+
+<body>
+	<h2>Table</h2>
+	<table>
+		{% for column_name in column_names_output %}
+			<th>{{column_name}}</th>
+		{% endfor %}
+		{% for row in A_output %}
+			<tr>
+				{% for element in row %}
+					<td>{{element}}</td>
+				{% endfor %}
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+
+</html>
