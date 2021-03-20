@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head> 
+	<title>Index</title>
+</head>
+
+<body>
+	<h1>Index Page</h1>
+	<p>Enter your favorite programming languages in decreasing order, starting from the most favorite.<p>
+	<form action="#" method="POST">  
+         <p> <input type="text" name="programming_language"/> </p>
+         <p> <input type="submit" value="click to submit"/> </p>
+    </form>  
+    <hr>
+	<table border = 1>
+         {% for language in programming_languages %}
+            <tr> <td>{{language}}</td> </tr>
+         {% endfor %}
+    </table>
+</body>
+
+</html>

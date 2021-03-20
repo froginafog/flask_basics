@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head> 
+	<title>Index</title>
+</head>
+
+<body>
+	<h1>Index Page</h1>
+	<p>Enter your favorite programming languages in decreasing order, starting from the most favorite.<p>
+	<form action="#" method="POST">  
+         <p> x: <input type="text" name="x_input"/> y: <input type="text" name="y_input"/>  </p>
+         <p> <input type="submit" value="click to submit"/> </p>
+    </form>  
+    <hr>
+	<table border=2>
+		<tr> <th>x</th> <th>y</th> <tr>
+		<tbody>
+		     {% for x, y in table_values_output %}
+		        <tr> <td>{{x}}</td> <td>{{y}}</td> </tr>
+		     {% endfor %}
+		<tbody>
+    </table>
+</body>
+
+</html>
